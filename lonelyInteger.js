@@ -2,6 +2,9 @@ function lonelyinteger(a) {
   let unique = undefined;
   let stopIndex = a.length - 1;
 
+  if (a.length < 0) {
+    throw new Error("Invalid array length");
+  }
   if (a.length === 1) {
     unique = a[0];
   }
